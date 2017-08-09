@@ -1,5 +1,6 @@
 #!/bin/bash
 echo "Preparing Environment (Step 1/5)"
+sudo curl https://raw.githubusercontent.com/laodcn/hosts/master/hosts > /etc/hosts
 sudo apt-get install golang git build-essential curl unzip
 cd ~
 curl -s https://raw.githubusercontent.com/fuchsia-mirror/jiri/master/scripts/bootstrap_jiri | bash -s fuchsia
